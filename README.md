@@ -8,11 +8,10 @@ A aplicação permite que o usuário informe seu peso e altura, realize o cálcu
 
 ---
 
-## 🚀 Demonstração
+## 🌐 Projeto online
 
-🔗 Acesse o projeto online:
-
-(Adicionar link do GitHub Pages futuramente)
+Acesse:
+https://jessicamartins06.github.io/calculadora-imc/
 
 ---
 
