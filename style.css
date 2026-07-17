@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações gerais da página */
+body {
+    font-family: "Roboto", sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    min-height: 100vh;
+}
+
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 30px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #2563eb;
+}
+
+
+/* Área principal */
+.tabela-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+/* Texto inicial */
+.tabela-container>p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+
+/* Formulário */
+.formulario {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Labels */
+label {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+
+/* Campos de entrada */
+input {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+
+/* Quando clicar no campo */
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+
+/* Botão */
+button {
+    padding: 14px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+button:hover {
+    background: #1d4ed8;
+}
+
+
+/* Resultado */
+#resultado {
+    margin-top: 25px;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+
+/* Tabela */
+.tabela {
+    background: white;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+.tabela h2 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* Estrutura da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+caption {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+
+th,
+td {
+    border: 1px solid #cbd5e1;
+    padding: 12px;
+    text-align: center;
+}
+
+
+th {
+    background: #2563eb;
+    color: white;
+}
+
+
+tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 30px;
+    color: #64748b;
+}
+
+@media screen and (max-width: 768px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .formulario {
+        padding: 20px;
+    }
+
+    .tabela {
+        padding: 20px;
+    }
+
+    .tabela h2 {
+        font-size: 1.1rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+}
