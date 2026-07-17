@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Calculadora IMC</h1>
+    </header>
+
+
+    <main class="tabela-container">
+
+        <p>Preencha seus dados para calcular o seu IMC </p>
+
+        <section class="formulario">
+
+            <form id="imc-form">
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" name="peso" min="1" max="400" placeholder="Ex.: 65 kg" required>
+
+                <label for="altura">Altura (m):</label>
+                <input type="number" step="0.01" id="altura" name="altura" min="0.5" max="2.50"
+                    placeholder="Ex.: 1,70 m" required>
+
+                <button type="submit" id="calcular-btn">Calcular IMC</button>
+            </form>
+
+            <div id="resultado"></div>
+        </section>
+
+        <section class="tabela">
+
+            <h2>Confira a tabela de IMC para saber mais sobre as classificações de IMC:</h2>
+
+            <table>
+                <caption>
+                    Tabela de Classificação do IMC
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th>Classificação</th>
+                        <th>IMC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Abaixo do peso</td>
+                        <td>Menor que 18,5</td>
+                    </tr>
+                    <tr>
+                        <td>Peso normal</td>
+                        <td>18,5 - 24,9</td>
+                    </tr>
+                    <tr>
+                        <td>Sobrepeso</td>
+                        <td>25 - 29,9</td>
+                    </tr>
+                    <tr>
+                        <td>Obesidade grau I</td>
+                        <td>30 - 34,9</td>
+                    </tr>
+                    <tr>
+                        <td>Obesidade grau II</td>
+                        <td>35 - 39,9</td>
+                    </tr>
+                    <tr>
+                        <td>Obesidade grau III (mórbida)</td>
+                        <td>40 ou mais</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <small> Desenvolvido por Jessica Martins</small>
+    </footer>
+
+</body>
+
+</html>
